@@ -2,6 +2,8 @@
 /test-output/
 .allure
 .settings
+.classpath
+.project
 *.class
 *.jar
 *.war
