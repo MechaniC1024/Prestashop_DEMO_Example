@@ -28,6 +28,7 @@ public class ReadWriteProperty {
 		
 	    try (InputStream input = new FileInputStream(AllureUUID.file);){
 	      prop.load(input);
+	      System.out.println(key + " --- " + prop.getProperty(key));
 	    } catch (IOException ex) {
 		System.out.println("Выкинуто исключение при чтении из файла.");
 	        ex.printStackTrace();
