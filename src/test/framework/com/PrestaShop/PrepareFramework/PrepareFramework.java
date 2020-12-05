@@ -17,6 +17,7 @@ public class PrepareFramework {
 
 		if (file_Config.exists()) {
 			file_Config.delete();
+		} else {
 			new File("src/test/resources/AllureUUID/").mkdir();
 		}
 
