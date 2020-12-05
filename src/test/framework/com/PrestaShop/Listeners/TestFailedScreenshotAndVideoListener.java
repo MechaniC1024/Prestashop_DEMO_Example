@@ -31,6 +31,9 @@ public class TestFailedScreenshotAndVideoListener implements IInvokedMethodListe
 
 			ReadWriteProperty.write(InitialConfiguration.getVideoName(),
 					Allure.getLifecycle().getCurrentTestCase().get());
+			
+//			ReadWriteProperty.write(InitialConfiguration.getVideoName(),
+//					Allure.getLifecycle().getCurrentTestCase().get());
 
 		}
 	}

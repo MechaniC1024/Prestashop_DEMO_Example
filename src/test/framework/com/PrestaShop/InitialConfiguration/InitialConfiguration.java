@@ -55,6 +55,8 @@ public class InitialConfiguration {
 
 		String prop = ReadWriteProperty.read(nameVideo);
 
+		System.out.println(nameVideo + " --- " + prop);
+		
 		File file = new File("target/allure-results/" + prop + "-result.json");
 		File fls = new File(System.getenv("pathToVideo") + nameVideo + ".mp4");//"F:/ZALENIUMVideoDocker/video/"
 

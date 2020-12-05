@@ -13,19 +13,19 @@ public class PrepareFramework {
 
 	public static void main(String[] args) {
 
-		File file_Config = AllureUUID.file;
+		//File file_Config = AllureUUID.file;
 
-		if (file_Config.exists()) {
-			file_Config.delete();
-		} else {
-			new File("src/test/resources/AllureUUID/").mkdir();
-			try {
-				file_Config.createNewFile();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+//		if (file_Config.exists()) {
+//			file_Config.delete();
+//		} else {
+//			new File("src/test/resources/AllureUUID/").mkdir();
+//			try {
+//				file_Config.createNewFile();
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		}
 
 		GetUrl url = ConfigFactory.create(GetUrl.class);
 
