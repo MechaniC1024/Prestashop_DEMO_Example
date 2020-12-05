@@ -97,7 +97,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
 						<suiteXmlFile>${chrome}</suiteXmlFile>
-						<suiteXmlFile>${firefox}</suiteXmlFile>
+						<!--<suiteXmlFile>${firefox}</suiteXmlFile>-->
 					</suiteXmlFiles>
 					<systemPropertyVariables>
 						<allure.results.directory>target/allure-results</allure.results.directory>
