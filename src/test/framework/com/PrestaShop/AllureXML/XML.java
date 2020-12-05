@@ -70,7 +70,7 @@ public class XML {
 		return document.getDocumentElement();
 	}
 
-	public synchronized XML createXMLParameter(String key, String value) {
+	public XML createXMLParameter(String key, String value) {
 
 		Element Parameter = document.createElement("parameter");
 		RootElement.appendChild(Parameter);
