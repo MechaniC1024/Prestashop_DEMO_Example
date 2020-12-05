@@ -19,6 +19,12 @@ public class PrepareFramework {
 			file_Config.delete();
 		} else {
 			new File("src/test/resources/AllureUUID/").mkdir();
+			try {
+				file_Config.createNewFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 		GetUrl url = ConfigFactory.create(GetUrl.class);

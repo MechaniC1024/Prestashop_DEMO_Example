@@ -16,8 +16,8 @@ public class ReadWriteProperty {
 		try (OutputStream output = new FileOutputStream(AllureUUID.file, true);){
 	        prop.setProperty(key, value);
 	        prop.store(output, null);
-		System.out.println("Выкинуто исключение при записи в файл.");
 	    } catch (IOException io) {
+		System.out.println("Выкинуто исключение при записи в файл.");
 	        io.printStackTrace();
 	    } 
 	}
