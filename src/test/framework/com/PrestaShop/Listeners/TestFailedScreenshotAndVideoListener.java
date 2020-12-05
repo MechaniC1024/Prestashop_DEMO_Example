@@ -25,10 +25,12 @@ public class TestFailedScreenshotAndVideoListener implements IInvokedMethodListe
 	@Override
 	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
 
-		if (method.isTestMethod() && !testResult.isSuccess()) {
+		if (method.isTestMethod() && testResult.isSuccess()) {//!testResult.isSuccess()
 
 			takeScreenshot(testResult);
 
+			System.out.println("Allure IDSESSION = " + Allure.getLifecycle().getCurrentTestCase().get());
+			
 			ReadWriteProperty.write(InitialConfiguration.getVideoName(),
 					Allure.getLifecycle().getCurrentTestCase().get());
 			

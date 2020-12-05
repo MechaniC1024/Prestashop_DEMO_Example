@@ -39,7 +39,7 @@ public class InitialConfiguration {
 		cap.setCapability("videoName", nameVideo + ".mp4");
 
 		try {
-			driver = new RemoteWebDriver(new URL(System.getenv("urlGrid")), cap);//"http://192.168.1.101:4444/wd/hub"
+			driver = new RemoteWebDriver(new URL("http://192.168.1.100:4444/wd/hub"), cap);//"http://192.168.1.101:4444/wd/hub"System.getenv("urlGrid")
 			driver.manage().window().maximize();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -58,7 +58,7 @@ public class InitialConfiguration {
 		System.out.println(nameVideo + " --- " + prop);
 		
 		File file = new File("target/allure-results/" + prop + "-result.json");
-		File fls = new File(System.getenv("pathToVideo") + nameVideo + ".mp4");//"F:/ZALENIUMVideoDocker/video/"
+		File fls = new File("F:/ZALENIUMVideoDocker/video/" + nameVideo + ".mp4");//System.getenv("pathToVideo")
 
 		ChangeAllureJson.changeAttachmentAllureJson(file, fls, "Test video.");
 	}
