@@ -58,7 +58,7 @@ public class InitialConfiguration {
 		System.out.println(nameVideo + " --- " + prop);
 		
 		File file = new File("target/allure-results/" + prop + "-result.json");
-		File fls = new File("F:/ZALENIUMVideoDocker/video/" + nameVideo + ".mp4");//System.getenv("pathToVideo")
+		File fls = new File("/video/" + nameVideo + ".mp4");//System.getenv("pathToVideo")F:/ZALENIUMVideoDocker/video/
 
 		ChangeAllureJson.changeAttachmentAllureJson(file, fls, "Test video.");
 	}
