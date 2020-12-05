@@ -25,7 +25,7 @@ public class TestFailedScreenshotAndVideoListener implements IInvokedMethodListe
 	@Override
 	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
 
-		if (method.isTestMethod() && testResult.isSuccess()) {//!testResult.isSuccess()
+		if (method.isTestMethod() ) {//!testResult.isSuccess()&& testResult.isSuccess()
 
 			takeScreenshot(testResult);
 
