@@ -15,7 +15,7 @@
 			<class name="com.PrestaShop.tests.LoginAndLogout" />
 		</classes>
 	</test>
-
+<!--  
 	<test name="Check titles.">
 		<classes>
 			<class name="com.PrestaShop.tests.Titles" />
@@ -39,5 +39,5 @@
 			<class name="com.PrestaShop.tests.Ordering" />
 		</classes>
 	</test>
-
+-->
 </suite>

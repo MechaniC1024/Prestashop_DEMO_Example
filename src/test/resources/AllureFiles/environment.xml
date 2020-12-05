@@ -8,4 +8,8 @@
 <key>Admin panel</key>
 <value>http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0</value>
 </parameter>
+<parameter>
+<key>Chrome</key>
+<value>86.0.4240.75</value>
+</parameter>
 </environment>
